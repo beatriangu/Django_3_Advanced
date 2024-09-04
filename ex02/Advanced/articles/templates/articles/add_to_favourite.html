@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Favourites</title>
+</head>
+<body>
+    <form method="POST" action="{% url 'add_to_favorites' %}">
+        {% csrf_token %}
+        <input type="hidden" name="article_id" value="{{ article.id }}">
+        <button type="submit">Add to Favorites</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{% extends 'articles/base.html' %}
+
+{% load i18n %}
+{% load custom_filters %}
+{% load humanize %} <!-- Load humanize for naturaltime filter -->
+
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block content %}
+    <h1>{{ article.title }}</h1>
+    <p><strong>{% trans "Synopsis" %}:</strong> {{ article.synopsis|truncate_synopsis:100 }}</p>
+    <p><strong>{% trans "Author" %}:</strong> {{ article.author.username }}</p>  <!-- Mostrar el nombre del autor -->
+    <p><strong>{% trans "Created" %}:</strong> {{ article.created|date:"M. d, Y, P" }}</p>  <!-- Mostrar la fecha de creación -->
+    <p><strong>{% trans "Published" %}:</strong> {{ article.published_date|naturaltime }}</p>  <!-- Mostrar la fecha de publicación en formato natural -->
+    <div>
+        <h2>{% trans "Content" %}</h2>
+        <p>{{ article.content }}</p>
+    </div>
+{% endblock %}
+
+
+
+
+

@@ -1,0 +1,15 @@
+{% extends 'articles/base.html' %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Publish Article" %}{% endblock %}
+
+{% block content %}
+    <h2>{% trans "Publish a New Article" %}</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">{% trans "Publish" %}</button>
+    </form>
+{% endblock %}
+

@@ -1,0 +1,41 @@
+{% extends 'articles/base.html' %}
+{% load custom_filters %}
+{% load l10n %} <!-- Cargar el filtro timesince -->
+
+{% block title %}Articles{% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+        <h2 class="mb-4"></h2>
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead class="bg-dark text-white">
+                    <tr>
+                        <!-- Clases personalizadas para alinear columnas -->
+                        <th class="align-left">Title</th>
+                        <th class="align-left">Synopsis</th>
+                        <th class="align-right">Writer</th>
+                        <th class="align-right">Created</th>
+                        <th class="align-right">When</th>
+                        <th></th> <!-- Columna para el botón "Read" -->
+                    </tr>
+                </thead>
+                <tbody>
+                {% for article in articles %}
+                    <tr class="bg-white">
+                        <!-- Aplicar clases personalizadas a las celdas -->
+                        <td class="align-left">{{ article.title }}</td>
+                        <td class="align-left">{{ article.synopsis|truncate_synopsis:20 }}</td>
+                        <td class="align-right">{{ article.author.username }}</td>  <!-- Mostrar el nombre del autor -->
+                        <td class="align-right">{{ article.created|date:"M. d, Y, P" }}</td>  <!-- Mostrar la fecha de creación -->
+                        <td class="align-right relative-time" data-date="{{ article.published_date|date:"c" }}"></td>
+                        <td>
+                            <a href="{% url 'article_detail' article.id %}" class="btn btn-primary rounded-3">Read</a> <!-- Botón "Read" con Bootstrap -->
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
+

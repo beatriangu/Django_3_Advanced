@@ -1,0 +1,20 @@
+{% extends 'articles/base.html' %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Publications" %}{% endblock %}
+
+{% block content %}
+    <h2>{% trans "Your Publications" %}</h2>
+    <ul class="list-group">
+        {% for article in articles %}
+            <li class="list-group-item">
+                <a href="{% url 'article_detail' article.id %}">{{ article.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
+
+
+

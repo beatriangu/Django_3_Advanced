@@ -1,0 +1,13 @@
+{% extends 'articles/base.html' %}
+
+{% block title %}Add to Favourites{% endblock %}
+
+{% block content %}
+    <h2>Add to Favourites</h2>
+    <form method="POST" action="{% url 'add_to_favourite' article.id %}">
+        {% csrf_token %}
+        <input type="hidden" name="article_id" value="{{ article.id }}">
+        <button type="submit" class="btn btn-primary">Add to Favourites</button>
+    </form>
+{% endblock %}
+

@@ -1,0 +1,36 @@
+{% extends 'articles/base.html' %}
+
+{% block title %}Publications{% endblock %}
+
+{% block content %}
+    <h2>Your Publications</h2>
+
+    <!-- Display messages -->
+    {% if messages %}
+        <div class="alert-container">
+            {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <ul class="list-group">
+        {% for article in articles %}
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="{% url 'article_detail' article.id %}">{{ article.title }}</a>
+                <form action="{% url 'add_to_favourite' article.id %}" method="post" class="ml-auto">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-success btn-sm">Add to Favourites</button>
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <!-- Add link to publish a new article -->
+    <a href="{% url 'publish_article' %}" class="btn btn-primary mt-4">Publish New Article</a>
+{% endblock %}
+
+
+

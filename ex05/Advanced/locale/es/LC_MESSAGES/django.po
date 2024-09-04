@@ -1,0 +1,171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-27 18:29+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: Advanced/settings.py:98
+msgid "English"
+msgstr "Inglés"
+
+#: Advanced/settings.py:99
+msgid "French"
+msgstr ""
+
+#: Advanced/settings.py:100
+msgid "Spanish"
+msgstr ""
+
+#: articles/templates/articles/add_to_favourite.html:3
+#: articles/templates/articles/add_to_favourite.html:6
+#: articles/templates/articles/add_to_favourite.html:10
+msgid "Add to Favourites"
+msgstr "Añadir a favoritos"
+
+#: articles/templates/articles/article_detail.html:11
+#: articles/templates/articles/article_list.html:18
+msgid "Synopsis"
+msgstr "Sinopsis"
+
+#: articles/templates/articles/article_detail.html:12
+msgid "Author"
+msgstr "Autor"
+
+#: articles/templates/articles/article_detail.html:13
+#: articles/templates/articles/article_list.html:20
+msgid "Created"
+msgstr "Creado"
+
+#: articles/templates/articles/article_detail.html:14
+msgid "Published"
+msgstr "Publicado"
+
+#: articles/templates/articles/article_detail.html:16
+msgid "Content"
+msgstr "Contenido"
+
+#: articles/templates/articles/article_list.html:7
+#: articles/templates/articles/article_list.html:11
+#: articles/templates/articles/base.html:115
+#: articles/templates/articles/base.html:132
+#: articles/templates/articles/base.html:142
+msgid "Articles"
+msgstr "Artículos"
+
+#: articles/templates/articles/article_list.html:17
+msgid "Title"
+msgstr "Título"
+
+#: articles/templates/articles/article_list.html:19
+msgid "Writer"
+msgstr "Escritor"
+
+#: articles/templates/articles/article_list.html:21
+msgid "When"
+msgstr "Cuando"
+
+#: articles/templates/articles/article_list.html:35
+msgid "Read"
+msgstr "Leer"
+
+#: articles/templates/articles/base.html:10
+msgid "My Site"
+msgstr "Mi sitio"
+
+#: articles/templates/articles/base.html:116
+msgid "Share your writings"
+msgstr "Comparte tus escritos"
+
+#: articles/templates/articles/base.html:119
+msgid "Français"
+msgstr "Francés"
+
+#: articles/templates/articles/base.html:120
+msgid "Español"
+msgstr "Español"
+
+#: articles/templates/articles/base.html:135
+#: articles/templates/articles/favourites.html:5
+msgid "Favourites"
+msgstr "Favoritos"
+
+#: articles/templates/articles/base.html:138
+#: articles/templates/articles/publications.html:5
+msgid "Publications"
+msgstr "Publicaciones"
+
+#: articles/templates/articles/base.html:145
+#: articles/templates/articles/register.html:5
+#: articles/templates/articles/register.html:8
+#: articles/templates/articles/register.html:12
+msgid "Register"
+msgstr "Registro"
+
+#: articles/templates/articles/base.html:155
+msgid "Logout"
+msgstr "Salida"
+
+#: articles/templates/articles/base.html:161
+msgid "Username"
+msgstr "Usuario"
+
+#: articles/templates/articles/base.html:162
+msgid "Password"
+msgstr "Clave"
+
+#: articles/templates/articles/base.html:163
+#: articles/templates/articles/login.html:5
+#: articles/templates/articles/login.html:8
+#: articles/templates/articles/login.html:12
+msgid "Login"
+msgstr "Login"
+
+#: articles/templates/articles/favourites.html:8
+msgid "Your Favourites"
+msgstr "Tus favoritos"
+
+#: articles/templates/articles/home.html:5
+msgid "Home"
+msgstr "Casa"
+
+#: articles/templates/articles/home.html:8
+msgid "Welcome to the Home Page"
+msgstr "Bienvenido a la página de inicio"
+
+#: articles/templates/articles/home.html:9
+msgid "Use the navigation menu to browse articles and manage your account."
+msgstr ""
+"Utilice el menú de navegación para buscar artículos y administrar su cuenta"
+
+#: articles/templates/articles/publications.html:8
+msgid "Your Publications"
+msgstr "Sus publicaciones"
+
+#: articles/templates/articles/publish_article.html:5
+msgid "Publish Article"
+msgstr "Publicar artículo"
+
+#: articles/templates/articles/publish_article.html:8
+msgid "Publish a New Article"
+msgstr "Publicar nuevo artículo"
+
+#: articles/templates/articles/publish_article.html:12
+msgid "Publish"
+msgstr "Publicar"
+
+#~ msgid "This is an article."
+#~ msgstr "Esto es un artículo"

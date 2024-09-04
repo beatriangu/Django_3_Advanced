@@ -1,0 +1,11 @@
+{% extends 'articles/base.html' %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Home" %}{% endblock %}
+
+{% block content %}
+    <h2>{% trans "Welcome to the Home Page" %}</h2>
+    <p>{% trans "Use the navigation menu to browse articles and manage your account." %}</p>
+{% endblock %}
+

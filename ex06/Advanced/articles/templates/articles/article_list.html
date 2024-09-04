@@ -1,0 +1,45 @@
+{% extends 'articles/base.html' %}
+{% load custom_filters %}
+{% load humanize %}
+{% load l10n %}
+{% load i18n %} <!-- Load internationalization support -->
+
+{% block title %}{% trans "Articles" %}{% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+        <h2 class="mb-4">{% trans "Articles" %}</h2>
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead class="bg-dark text-white">
+                    <tr>
+                        <!-- Custom classes to align columns -->
+                        <th class="align-left">{% trans "Title" %}</th>
+                        <th class="align-left">{% trans "Synopsis" %}</th>
+                        <th class="align-right">{% trans "Writer" %}</th>
+                        <th class="align-right">{% trans "Created" %}</th>
+                        <th class="align-right">{% trans "When" %}</th>
+                        <th></th> <!-- Column for the "Read" button -->
+                    </tr>
+                </thead>
+                <tbody>
+                {% for article in articles %}
+                    <tr class="bg-white">
+                        <!-- Apply custom classes to the cells -->
+                        <td class="align-left">{{ article.title }}</td>
+                        <td class="align-left">{{ article.synopsis|truncate_synopsis:20 }}</td>
+                        <td class="align-right">{{ article.author.username }}</td>  <!-- Display the author's username -->
+                        <td class="align-right">{{ article.created|date:"M. d, Y, P" }}</td>  <!-- Display the creation date -->
+                        <td class="align-right">{{ article.published_date|naturaltime }}</td> <!-- Display the publication date in a natural time format -->
+                        <td>
+                            <a href="{% url 'article_detail' article.id %}" class="btn btn-primary rounded-3">{% trans "Read" %}</a> <!-- "Read" button with Bootstrap -->
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
+
+
+

@@ -1,0 +1,22 @@
+{% extends 'articles/base.html' %}
+
+{% load custom_filters %}
+
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block content %}
+    <h1>{{ article.title }}</h1>
+    <p><strong>Synopsis:</strong> {{ article.synopsis|truncate_synopsis:100 }}</p>
+    <p><strong>Author:</strong> {{ article.author.username }}</p>  <!-- Mostrar el nombre del autor -->
+    <p><strong>Created:</strong> {{ article.created|date:"M. d, Y, P" }}</p>  <!-- Mostrar la fecha de creación -->
+    <p><strong>Published:</strong> {{ article.published_date|date:"M. d, Y, P" }}</p>  <!-- Mostrar la fecha de publicación -->
+    <div>
+        <h2>Content</h2>
+        <p>{{ article.content }}</p>
+    </div>
+{% endblock %}
+
+
+
+
+
