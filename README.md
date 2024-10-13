@@ -17,6 +17,8 @@
 
 **ex04** Bootstrap use.
 
+https://github.com/beatriangu/Django_3_Advanced/blob/main/Screenshot%20from%202024-10-13%2013-17-23.png?raw=true
+
 **ex05** Internationalization.
 
 **ex06** Django testing.
