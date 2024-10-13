@@ -12,6 +12,8 @@
 **ex03** Use of Django's template tags and filters to implement these features of if you're already logged in or not.
 <p align="left"> <img src="https://github.com/beatriangu/Django_3_Advanced/blob/main/Screenshot%20from%202024-10-13%2013-07-25.png" width="300"/> </p> 
 
+<p align="left"> <img src="https://github.com/beatriangu/Django_3_Advanced/blob/main/Screenshot%20from%202024-10-13%2013-07-25.png" width="300"/> </p> 
+
 
 **ex04** Bootstrap use.
 
