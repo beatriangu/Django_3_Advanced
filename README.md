@@ -16,8 +16,8 @@
 <p align="left"> <img src="https://github.com/beatriangu/Django_3_Advanced/blob/main/Screenshot%20from%202024-10-13%2013-07-42.png" width="300"/> </p> 
 
 **ex04** Bootstrap use.
-
-https://github.com/beatriangu/Django_3_Advanced/blob/main/Screenshot%20from%202024-10-13%2013-17-23.png?raw=true
+<p align="left"> <img src="https://github.com/beatriangu/Django_3_Advanced/blob/main/Screenshot%20from%202024-10-13%2013-16-46.png" width="300"/> </p> 
+<p align="left"> <img src="https://github.com/beatriangu/Django_3_Advanced/blob/main/Screenshot%20from%202024-10-13%2013-17-23.png" width="300"/> </p> 
 
 **ex05** Internationalization.
 
