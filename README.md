@@ -2,7 +2,7 @@
 
 ex00 You’ll implement views using Django's generic class-based views to display articles in an HTML table, create a home redirect, and handle user login with error messages. The exercise emphasizes using generic views and setting up basic model structures for user and article management.
 <p align="left">
-  <img src="https://github.com/beatriangu/Django_3_Advanced/blob/main/Screenshot%20from%202024-10-13%2012-37-39.png" width="150"/>
+  <img src="https://github.com/beatriangu/Django_3_Advanced/blob/main/Screenshot%20from%202024-10-13%2012-37-39.png" width="300"/>
 </p>
 https://github.com/beatriangu/Django_3_Advanced/blob/main/Screenshot%20from%202024-10-13%2012-37-39.png
 ex01 The exercise involves displaying article data in tables, linking to article details, and managing user sessions.
