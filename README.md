@@ -17,10 +17,11 @@
 
 **ex04** Bootstrap use.
 <p align="left"> <img src="https://github.com/beatriangu/Django_3_Advanced/blob/main/Screenshot%20from%202024-10-13%2013-16-46.png" width="300"/> </p> 
-<p align="left"> <img src="https://github.com/beatriangu/Django_3_Advanced/blob/main/Screenshot%20from%202024-10-13%2013-17-23.png" width="300"/> </p> 
+<p align="left"> <img src="https://github.com/beatriangu/Django_3_Advanced/blob/main/Screenshot%20from%202024-10-13%2013-17-23.png" width="300"/> </p>
 
 **ex05** Internationalization.
-https://github.com/beatriangu/Django_3_Advanced/blob/main/Screenshot%20from%202024-10-14%2017-03-12.png?raw=true
+<p align="left"> <img src="https://github.com/beatriangu/Django_3_Advanced/blob/main/Screenshot%20from%202024-10-14%2017-03-12.png" width="300"/> </p>
+
 **ex06** Django testing.
 
 <p align="left">
